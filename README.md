@@ -64,28 +64,23 @@ To get our raw CSV file onto GitHub, we used OpenRefine (a data cleaning tool by
 
 ## Project Goal
 
-    Trends in gun violence over time (monthly, seasonal, and annual patterns)
-
-    Most affected states or cities (TO-DO: or perhaps even congressional districts?)
-
-    Common characteristics of high-casualty events (participant demographics/relationships)
+- Trends in gun violence over time (monthly, seasonal, and annual patterns)
+- Most affected states or cities (TO-DO: or perhaps even congressional districts?)
+- Common characteristics of high-casualty events (participant demographics/relationships)
 
 
 ## Feature Engineering
 
-    Created new features (for example, total casualties = n_killed + n_injured)
-
-    Extracted date features (year, month, weekday) for time series analysis
-
-    Encoded categorical variables
+- Created new features (for example, total casualties = n_killed + n_injured)
+- Extracted date features (year, month, weekday) for time series analysis
+- Encoded categorical variables
 
 
 ## Modeling Approach
 
-    Chosen models:
-    Logistic regression & random forest to do multivariate & ensemble analyses respectively.
-
-    We selected logistic regression over b/c it  models categorical outcomes like high-casualty events and regional trends (unlike linear regression which is, well, linear). Random forests were also chosen for their ability to capture non-linear relationships and interactions among features. A random forest ensemble may pick up on trends that other models fail to see - and our dataset is so large that overfitting isn't too much of a concern.
+Chosen models:
+- Logistic regression & random forest to do multivariate & ensemble analyses respectively.
+- We selected logistic regression over b/c it  models categorical outcomes like high-casualty events and regional trends (unlike linear regression which is, well, linear). Random forests were also chosen for their ability to capture non-linear relationships and interactions among features. A random forest ensemble may pick up on trends that other models fail to see - and our dataset is so large that overfitting isn't too much of a concern.
 
 ## Performance Metrics
 
@@ -110,10 +105,10 @@ To get our raw CSV file onto GitHub, we used OpenRefine (a data cleaning tool by
 
 ## Key Findings
 
-    Trends in gun violence over time (e.g., monthly/seasonal patterns)
+- Trends in gun violence over time (e.g., monthly/seasonal patterns)
 
-    Most affected states or cities
+- Most affected states or cities
 
-    Common characteristics of high-casualty events
+- Common characteristics of high-casualty events
 
-    Participant demographics and relationships
+- Participant demographics and relationships
