@@ -5,6 +5,7 @@
 Our project uses a dataset on gun violence incidents in the US, spanning January 2013 to March 2018. The data includes over 200,000 recorded incidents, compiled and scraped from [GunViolenceArchive.org](https://GunViolenceArchive.org).
 
 Source: [https://www.kaggle.com/datasets/jameslko/gun-violence-data](https://www.kaggle.com/datasets/jameslko/gun-violence-data)
+
 Drive Download: https://drive.google.com/drive/folders/1kKifAWcEK2YmSKhCu8LyMgTirKkU1fcj?usp=drive_link
 
 ### Dataset in a nutshell:
