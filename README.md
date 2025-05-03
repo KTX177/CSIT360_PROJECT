@@ -84,31 +84,20 @@ Chosen models:
 
 ## Performance Metrics
 
-    Metrics used:
+### Confusion Matrix
+- **TN**: 34,047 (Non-fatal correctly predicted)
+- **FP**: 2,341 (Non-fatal wrongly predicted as fatal)
+- **FN**: 6,047 (Fatal wrongly predicted as non-fatal)
+- **TP**: 3,916 (Fatal correctly predicted)
 
-        Accuracy, Precision, Recall, F1-score
+### Classification Report
+| Metric    | Non-fatal | Fatal |
+|-----------|-----------|-------|
+| Precision | 0.85      | 0.63  |
+| Recall    | 0.94      | 0.39  |
+| F1-score  | 0.89      | 0.48  |
 
-        Confusion Matrix
-
-        AUC-ROC (if applicable)
-
-    Model evaluation results:
-    (Insert table or summary of performance)
-
-        Example:
-
-            Accuracy: 92.3%
-
-            F1 Score: 0.88
-
-            AUC: 0.94
-
-## Key Findings
-
-- Trends in gun violence over time (e.g., monthly/seasonal patterns)
-
-- Most affected states or cities
-
-- Common characteristics of high-casualty events
-
-- Participant demographics and relationships
+### Key Points
+- **Non-fatal**: Strong (F1 = 0.89), catches most cases (recall = 0.94).
+- **Fatal**: Weak (F1 = 0.48), misses many cases (recall = 0.39).
+- **Accuracy**: 82%, but only ~40% of fatal incidents caught, likely insufficient for critical use.
