@@ -10,7 +10,6 @@ from sklearn.impute import SimpleImputer
 
 # Aside from the Random Forest, we
 
-
 #Fatal vs. Non-Fatal Classification (Binary)
 
 # Theory: This could help identify the likelihood of an incident leading to a fatality. It’s a crucial target for public safety initiatives, as understanding which incidents are more likely to result in deaths can guide policy decisions, law enforcement, and medical responses.

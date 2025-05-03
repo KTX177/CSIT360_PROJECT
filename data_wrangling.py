@@ -1,14 +1,12 @@
 import pandas as pd
 import numpy as np
 
-
 def load_data(filepath):
 
     # Load data from CSV in data folder
     df = pd.read_csv(filepath, low_memory=False)
-    print(f"Data loaded. Shape: {df.shape}")
+    print(f"Shape: {df.shape}")
     return df
-
 
 # Checking to see basic details and stats
 def inspect_data(df):
@@ -18,7 +16,6 @@ def inspect_data(df):
     print(df.isna().sum().sort_values(ascending=False))
     print("\n--- Sample Rows ---")
     print(df.head())
-
 
 # Drop high-missing cols - we may need to drop more later
 def drop_columns(df):
@@ -32,7 +29,6 @@ def drop_columns(df):
     ]
     df = df.drop(columns=columns_to_drop, errors='ignore')
     return df
-
 
 # Handle other missing vals
 def impute_missing(df):
@@ -49,7 +45,6 @@ def impute_missing(df):
 
     return df
 
-
 # Feat. engineering
 def feature_engineering(df):
     
@@ -61,13 +56,10 @@ def feature_engineering(df):
     df['day_of_week'] = df['date'].dt.day_name()
     return df
 
-
 # Save cleaned data
 def save_data(df, output_path):
     df.to_csv(output_path, index=False)
     print(f"Cleaned data saved to: {output_path}")
-
-
 
 # MAIN FUNCTION
 # We run through all the other functs. above essentially in order of appearance
